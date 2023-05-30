@@ -18,3 +18,8 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+body {
+    background-color: #151515;
+    font-family: 'Share Tech Mono', monospace;
+}
