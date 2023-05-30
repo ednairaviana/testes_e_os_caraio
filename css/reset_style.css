@@ -22,4 +22,9 @@ time, mark, audio, video {
 body {
     background-color: #151515;
     font-family: 'Share Tech Mono', monospace;
+	text-transform: capitalize;
+}
+
+a {
+	text-decoration: none;
 }

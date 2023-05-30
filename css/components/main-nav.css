@@ -1,0 +1,33 @@
+.main-nav {
+    display: inline-flex;
+    align-items: center;
+}
+
+.main-nav .navList li {
+    display: inline-block;
+    margin-right: 30px;
+    list-style: none;
+}
+
+.navList li:last-of-type {
+    margin-right: 0;
+}
+
+.navList li a {
+    color: #FFF;
+    font-size: 20px;
+}
+
+.navList li::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 1px;
+    background-color: #FFF;
+    margin: 1px auto 0;
+    transition: all 0.5s;
+}
+
+.navList li:hover::after {
+    width: 100%;
+}
