@@ -50,8 +50,8 @@
     width: fit-content;
     height: fit-content;
     position: fixed;
-    right: 0;
-    bottom: 0;
+    right: 2px;
+    bottom: 20px;
     z-index: 10;
 }
 
