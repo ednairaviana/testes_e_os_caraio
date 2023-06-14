@@ -1,0 +1,80 @@
+/* RELATIVE */
+
+.relative {
+    position: relative;
+    z-index: 1;
+}
+
+.relative.rl-top {
+    top: 50px;
+}
+
+.relative.rl-right {
+    right: 50px;
+}
+
+.relative.rl-bottom {
+    bottom: 50px;
+}
+
+.relative.rl-left {
+    left: 50px;
+}
+
+/* ABSOLUTE */
+
+.absolute {
+    position: absolute;
+}
+
+.absolute.abTop {
+    top: 0;
+}
+
+.absolute.abLeft {
+    left: 10px;
+}
+
+.absolute.ab1 {
+    top: 30px;
+    right: 60px;
+}
+
+.absolute.ab2 {
+    left: 10px;
+}
+
+/* FIXED */
+
+.fixed {
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+/* STICKY */
+
+.section.scSticky {
+    align-items: flex-start;
+    height: 200vh;
+    margin-bottom: 100vh;
+}
+
+.sticky {
+    position: sticky;
+    width: 80%;
+    top: 20vh;
+}
+
+@media (max-width: 500px) {
+    .scSticky {
+        flex-direction: row;
+    }
+
+    .sticky {
+        top: 12vh;
+    }
+}

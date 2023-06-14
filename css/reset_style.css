@@ -19,12 +19,57 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+/* DEFAULT ELEMENTS */
+
+html {
+	font-size: 16px;
+}
+
 body {
-    background-color: #151515;
+	background-color: #151515;
     font-family: 'Share Tech Mono', monospace;
 	text-transform: capitalize;
+	color: #f5f5f5;
+	font-size: 1.2rem;
 }
 
 a {
+	color: #f5f5f5;
 	text-decoration: none;
+}
+
+@media (max-width: 500px) {
+	html {
+		font-size: 10px;
+	}
+}
+
+/* SELECTION */
+
+p::selection {
+	background-color: rgba(0,0,0,0.5);
+}
+
+h1::selection {
+	background-color: rgba(0,0,0,0.5);
+}
+
+h2::selection {
+	background-color: rgba(0,0,0,0.5);
+}
+
+a::selection {
+	background-color: rgba(0,0,0,0.5);
+}
+
+li::selection {
+	background-color: rgba(0,0,0,0.5);
+}
+
+div::selection {
+	background-color: rgba(0,0,0,0.5);
+}
+
+em::selection {
+	background-color: rgba(0,0,0,0.5);
 }

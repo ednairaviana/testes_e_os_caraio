@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes e os caraio</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://foSnts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="/css/reset_style.css">
+    <link rel="stylesheet" href="/css/components/main-components.css">
+    <link rel="stylesheet" href="/css/components/parent-element.css">
+    <link rel="stylesheet" href="/css/components/position.css">
+    
+</head>
+<body>
+
+    <!-- INÍCIO DA HEADER -->
+
+    <header class="main-header">
+
+        <a class="logo" href="/index.html">
+            <h1 class="-lgTtl">Testes e os caraio</h1>
+        </a>
+
+        <nav class="main-nav">
+
+            <ul class="navList">
+                <li>
+                    <a href="/index.html">home</a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- FIM DA HEADER -->
+
+    <!-- POSITIONING -->
+
+    <section class="main-section htFree">
+
+        <h1 class="main-title ttlWhite">Positioning</h1>
+
+        <div class="parent-element">
+            <h2 class="main-subtitle sbPdBt sbPdTp lttSp">
+                Static Position
+            </h2>
+
+            <div class="child-element">
+                <p>default</p>
+            </div>
+            <div class="child-element">
+                <p>Todos os elementos são <em>static</em></p>
+            </div>
+            <div class="child-element">
+                <p>Top, left, bottom, right não afetam esse tipo de <em>position</em></p>
+            </div>
+            <div class="child-element">
+                <p>Eles se comportam na ordem do documento HTML</p>
+            </div>
+        </div>
+
+        <!-- RELATIVE POSITION -->
+
+        <div class="parent-element">
+            <h2 class="main-subtitle sbPdBt sbPdTp lttSp">
+                 Relative Position
+            </h2>
+            <div class="child-element">
+                <p>
+                    Respeita a ordem do documento HTML, porém sua posição pode ser alterada!
+                </p>
+            </div>
+
+            <div class="parent-element section">
+                <div class="child-element sqrChild">child-flex 1</div>
+                <div class="child-element sqrChild">child-flex 2</div>
+                <div class="child-element sqrChild">child-flex 3</div>
+            </div>
+            <div class="parent-element section">
+                <div class="child-element sqrChild"></div>
+                <div class="child-element sqrChild relative rl-top">top 50px</div>
+                <div class="child-element sqrChild"></div>
+            </div>
+            <div class="parent-element section">
+                <div class="child-element sqrChild"></div>
+                <div class="child-element sqrChild relative rl-right">right 50px</div>
+                <div class="child-element sqrChild"></div>
+            </div>
+            <div class="parent-element section">
+                <div class="child-element sqrChild"></div>
+                <div class="child-element sqrChild relative rl-bottom">bottom 50px</div>
+                <div class="child-element sqrChild"></div>
+            </div>
+            <div class="parent-element section">
+                <div class="child-element sqrChild"></div>
+                <div class="child-element sqrChild relative rl-left">left 50px</div>
+                <div class="child-element sqrChild"></div>
+            </div>
+            <div class="parent-element section">
+                <div class="child-element sqrChild"></div>
+                <div class="child-element sqrChild relative rl-left rl-top">left 50px top 50px</div>
+                <div class="child-element sqrChild"></div>
+            </div>
+        </div>
+
+        <!-- ABSOLUTE POSITION -->
+
+        <div class="parent-element">
+            <h2 class="main-subtitle sbPdBt sbPdTp lttSp">
+                Absolute Position
+           </h2>
+           <div class="child-element">
+               <p>
+                   Ignora elementos com static position e a ordem do documento html!
+               </p>
+           </div>
+           <div class="child-element">
+               <p>
+                   Nos exemplos abaixo a parent-div está como relative
+               </p>
+           </div>
+
+           <div class="parent-element section relative">
+                <div class="child-element sqrChild">
+                    1
+                </div>
+                <div class="child-element sqrChild">
+                    2
+                </div>
+                <div class="child-element sqrChild">
+                    3
+                </div>
+            </div>
+            <div class="parent-element section relative">
+                <div class="child-element sqrChild absolute abTop">
+                    1 <br> top 0
+                </div>
+                <div class="child-element sqrChild">
+                    2
+                </div>
+                <div class="child-element sqrChild">
+                    3
+                </div>
+            </div>
+            <div class="parent-element section relative">
+                <div class="child-element sqrChild absolute abLeft">
+                    1 <br> left 10px
+                </div>
+                <div class="child-element sqrChild">
+                    2
+                </div>
+                <div class="child-element sqrChild">
+                    3
+                </div>
+            </div>
+            <div class="parent-element section relative">
+                <div class="child-element sqrChild absolute ab1">
+                    top 30px right 60px
+                </div>
+                <div class="child-element sqrChild">
+                    2
+                </div>
+                <div class="child-element sqrChild">
+                    3
+                </div>
+            </div>
+
+            <div class="child-element">
+                <p>
+                    O exemplo abaixo a parent-div está static
+                </p>
+            </div>
+
+            <div class="parent-element section">
+                <div class="child-element sqrChild absolute ab2">
+                    static child<br>left 10px
+                </div>
+                <div class="child-element sqrChild">
+                    2
+                </div>
+                <div class="child-element sqrChild">
+                    3
+                </div>
+            </div>
+        </div>
+
+        <!-- FIXED POSITION -->
+
+        <div class="parent-element">
+            <h2 class="main-subtitle sbPdBt sbPdTp lttSp">
+                Fixed Position
+            </h2>
+            <div class="child-element">
+                <p>
+                   O elemento fica relativo ao display / documento html.
+                </p>
+            </div>
+            <div class="child-element">
+                <p>
+                   O melhor exemplo de fixed position do site é a própria header.
+                </p>
+            </div>
+
+            <div class="parent-element section">
+                <div class="child-element sqrChild">
+                    1
+                </div>
+                <div class="child-element sqrChild">
+                    2
+                </div>
+                <div class="child-element sqrChild fixed">
+                    3<br>fixed
+                </div>
+            </div>
+
+            <div class="child-element">
+                <p>
+                   Também é necessário alterar o z-index, pois o relative se sobrepõe ao fixed
+                </p>
+            </div>
+        </div>
+
+        <!-- STICKY POSITION -->
+
+        <div class="parent-element">
+            <h2 class="main-subtitle sbPdBt sbPdTp lttSp">
+                Sticky Position
+            </h2>
+            <div class="child-element">
+                <p>
+                   Elemento fixo relativo ao parent
+                </p>
+            </div>
+            <div class="child-element">
+                <p>
+                   Scroll down
+                </p>
+            </div>
+
+            <div class="parent-element section scSticky">
+                <div class="child-element sqrChild sticky">
+                    1<br>sticky
+                </div>
+            </div>
+
+            <div class="child-element">
+                <p>
+                   O elemento se manterá dentro do parent
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    
+    
+</body>
+</html>
