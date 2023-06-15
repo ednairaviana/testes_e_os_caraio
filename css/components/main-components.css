@@ -134,6 +134,15 @@
     width: 100%;
 }
 
+.main-link:active {
+    opacity: 0.6;
+    background-color: inherit;
+}
+
+.main-link:active::selection {
+    background-color: inherit;
+}
+
 /* scLink */
 
 .main-link.scLink {
