@@ -1,0 +1,158 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Functions - testes e os caraio</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://foSnts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="../css/reset_style.css">
+    <link rel="stylesheet" href="../css/components/main-components.css">
+    <link rel="stylesheet" href="../css/components/parent-element.css">
+    <link rel="stylesheet" href="../css/components/position.css">
+    <link rel="stylesheet" href="../css/components/css_functions.css">
+    
+</head>
+<body>
+
+    <!-- INÍCIO DA HEADER -->
+
+    <header class="main-header">
+
+        <a class="logo" href="../index.html">
+            <h1 class="-lgTtl">Testes e os caraio</h1>
+        </a>
+
+        <nav class="main-nav">
+
+            <ul class="navList">
+                <li>
+                    <a class="main-link" href="../index.html">home</a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <section class="main-section">
+
+        <h1 class="main-title ttlWhite">CSS Functions</h1>
+
+        <div class="parent-element">
+            <h2 class="main-subtitle sbPdBt sbPdTp lttSp">
+                Definição
+            </h2>
+
+            <div class="child-element">
+                <p>Valor seguido por parênteses</p>
+            </div>
+            <div class="child-element">
+                <p>Argumentos são calculados dentro dos parênteses</p>
+            </div>
+            <div class="child-element">
+                <p>Pedaços de códigos que podem ser reusados</p>
+            </div>
+            <div class="child-element">
+                <p>Importante para responsividade do layout</p>
+            </div>
+        </div>
+
+        <div class="parent-element">
+            <h2 class="main-subtitle sbPdBt sbPdTp lttSp">
+                calc()
+            </h2>
+            <div class="child-element">
+                <p>Diferentes unidades podem ser calculadas</p>
+            </div>
+
+            <div class="parent-element section">
+                <div class="child-element sqrChild calc">
+                    width: calc(60% + 30px);
+                </div>
+            </div>
+        </div>
+
+        <div class="parent-element">
+            <h2 class="main-subtitle sbPdBt sbPdTp lttSp">
+                min()
+            </h2>
+            <div class="child-element">
+                <p>O menor valor é aplicado</p>
+            </div>
+            <div class="child-element">
+                <p>Em dispositivos menores o valor será de 70%, pois será menor que 300px</p>
+            </div>
+
+            <div class="parent-element section">
+                <div class="child-element sqrChild min">
+                    width: min(300px, 70%);
+                </div>
+            </div>
+        </div>
+
+        <div class="parent-element">
+            <h2 class="main-subtitle sbPdBt sbPdTp lttSp">
+                max()
+            </h2>
+            <div class="child-element">
+                <p>O maior valor é aplicado</p>
+            </div>
+            <div class="child-element">
+                <p>Em dispositivos maiores o valor será de 40%, pois será maior que 200px</p>
+            </div>
+
+            <div class="parent-element section">
+                <div class="child-element sqrChild max">
+                    width: max(200px, 40%);
+                </div>
+            </div>
+        </div>
+
+        <div class="parent-element">
+            <h2 class="main-subtitle sbPdBt sbPdTp lttSp">
+                clamp()
+            </h2>
+            <div class="child-element">
+                <p>(menor, ideal, maior)</p>
+            </div>
+            <div class="child-element">
+                <p>"Quando alcançar certo valor, o mesmo será aplicado."</p>
+            </div>
+
+            <div class="parent-element section">
+                <div class="child-element sqrChild clamp">
+                    width: clamp(220px, 50%, 80vw);
+                </div>
+            </div>
+        </div>
+
+        <div class="parent-element">
+            <h2 class="main-subtitle sbPdBt sbPdTp lttSp">
+                Referências
+            </h2>
+            <div class="child-element">
+                <a class="main-link scLink" href="https://codepen.io/una/pen/rNeGNVL" target="_blank" rel="noopener noreferrer">
+                    min()
+                </a>
+            </div>
+            <div class="child-element">
+                <a class="main-link scLink" href="https://codepen.io/una/pen/RwaZXqR" target="_blank" rel="noopener noreferrer">
+                    max()
+                </a>
+            </div>
+            <div class="child-element">
+                <a class="main-link scLink" href="https://codepen.io/una/pen/bGpoGdJ" target="_blank" rel="noopener noreferrer">
+                    clamp()
+                </a>
+            </div>
+        </div>
+
+    </section>
+    
+</body>
+</html>
