@@ -8,6 +8,10 @@
     padding-bottom: 1%;
 }
 
+.parent-element.pdd {
+    padding: 2% 5%;
+}
+
 .section {
     padding-bottom: 0;
     margin-bottom: 4%;

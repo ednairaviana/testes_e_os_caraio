@@ -1,3 +1,11 @@
-.list-nav a {
-    text-transform: uppercase;
+.list-nav {
+    list-style: none;
+}
+
+.list-nav li {
+    margin-bottom: 1rem;
+}
+
+.list-nav li:last-of-type {
+    margin-bottom: 0;
 }

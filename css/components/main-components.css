@@ -51,10 +51,6 @@
     margin-right: 0;
 }
 
-.navList li:hover.main-link::after {
-    width: 100%;
-}
-
 /* ----------- MAIN-SECTION -------------- */
 
 .main-section {
