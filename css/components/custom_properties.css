@@ -1,0 +1,42 @@
+.custom {
+    background: none;
+    --color-1:#00008B;
+    --color-2:#ff1493;
+    --color-3:#660066;
+
+    --bgc-color: #F5F5F5;
+    --txt-color: #151515;
+}
+
+.color1 {
+    background-color: var(--color-1);
+}
+
+.color2 {
+    background-color: var(--color-2);
+}
+
+.color3 {
+    background-color: var(--color-3);
+}
+
+/* TEMAS */
+
+.theme.c-white {
+    --bgc-color: #F5F5F5;
+    --txt-color: #151515;
+    --brd-color: #151515;
+}
+
+.theme.c-dark {
+    --bgc-color: #151515;
+    --txt-color: #F5F5F5;
+    --brd-color: #F5F5F5;
+}
+
+.theme {
+    text-transform: uppercase;
+    background-color: var(--bgc-color);
+    color: var(--txt-color);
+    border: 2px dashed var(--brd-color);
+}

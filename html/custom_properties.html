@@ -1,0 +1,135 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Properties - testes e os caraio</title>
+
+     <!-- FONTS -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://foSnts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+ 
+     <!-- LINK CSS -->
+     <link rel="stylesheet" href="../css/reset_style.css">
+     <link rel="stylesheet" href="../css/components/main-components.css">
+     <link rel="stylesheet" href="../css/components/parent-element.css">
+     <link rel="stylesheet" href="../css/components/child-element.css">
+     <link rel="stylesheet" href="../css/components/custom_properties.css">
+     
+</head>
+<body>
+
+    <!-- INÍCIO DA HEADER -->
+
+    <header class="main-header">
+
+        <a class="logo" href="../index.html">
+            <h1 class="-lgTtl">Testes e os caraio</h1>
+        </a>
+
+        <nav class="main-nav">
+
+            <ul class="navList">
+                <li>
+                    <a class="main-link" href="../index.html">home</a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- SECTION -->
+
+    <section class="main-section htFree">
+
+        <h1 class="main-title ttlWhite">Custom Properties</h1>
+
+        <div class="parent-element">
+            <h2 class="main-subtitle sbPdBt sbPdTp lttSp">
+                Definição
+            </h2>
+
+            <div class="child-element">
+                <p>Facilidade em alterar e aplicar valores no CSS</p>
+            </div>
+            <div class="child-element">
+                <p>css variables</p>
+            </div>
+        </div>
+
+        <div class="parent-element">
+            <h2 class="main-subtitle sbPdBt sbPdTp lttSp">
+                Syntax
+            </h2>
+
+            <div class="child-element">
+                <p>--variable: value;</p>
+            </div>
+            <div class="parent-element section scHt scNoBrd">
+                <div class="child-element sqrChild -sqrLrg custom color1">
+                    --color-1: #00008B;
+                </div>
+            </div>
+            <div class="parent-element section scHt scNoBrd">
+                <div class="child-element sqrChild -sqrLrg custom color2">
+                    --color-2:#ff1493;
+                </div>
+            </div>
+            <div class="parent-element section scHt scNoBrd">
+                <div class="child-element sqrChild -sqrLrg custom color3">
+                    --color-3:#660066;
+                </div>
+            </div>
+
+            <div class="child-element">
+                <p>background-color: var(--color);</p>
+            </div>
+        </div>
+
+        <div class="parent-element">
+            <h2 class="main-subtitle sbPdBt sbPdTp lttSp">
+                Scope
+            </h2>
+
+            <div class="child-element">
+                <p>A seleção afeta o alcance da variação (obviamente)</p>
+            </div>
+            <div class="child-element">
+                <p>:root {}</p>
+            </div>
+        </div>
+        
+        <div class="parent-element">
+            <h2 class="main-subtitle sbPdBt sbPdTp lttSp">
+                Temas
+            </h2>
+
+            <div class="child-element">
+                <p>Facilita a mudança de temas (esquemas de cores, etc)</p>
+            </div>
+            <div class="child-element">
+                <a class="main-link scLink" href="https://codepen.io/TheOdinProjectExamples/pen/PojVRMb" target="_blank" rel="noopener noreferrer">
+                    Exemplo no codepen
+                </a>
+            </div>
+            <div class="parent-element section scHt-50vh">
+                <div class="child-element sqrChild halfChild custom theme c-white">
+                    TEMA CLARO
+                </div>
+                <div class="child-element sqrChild halfChild custom theme c-dark">
+                    TEMA ESCURO
+                </div>
+            </div>
+            <div class="child-element">
+                <p>Ambos tem o mesmo código, alterando somente sua variável</p>
+            </div>
+            <div class="child-element">
+                <p>Código mais limpo</p>
+            </div>
+        </div>
+
+    </section>
+    
+</body>
+</html>
