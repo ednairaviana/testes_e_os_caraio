@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form Basics</title>
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="../css/components/parent-element.css">
     <link rel="stylesheet" href="../css/components/child-element.css">
     <link rel="stylesheet" href="../css/components/custom_properties.css">
+    <link rel="stylesheet" href="../css/form_reset.css">
+    <link rel="stylesheet" href="../css/components/form_controls.css">
 </head>
 <body>
     
@@ -50,12 +52,161 @@
             </h2>
 
             <div class="child-element">
-                <p>Interação entre o usuário e o website/aplicação</p>
+                <p>Interação entre o usuário e o website / aplicação</p>
             </div>
             <div class="child-element">
                 <p>Coleta dados de usuários</p>
             </div>
         </div>
+
+        <div class="parent-element">
+            <h2 class="main-subtitle sbPdBt sbPdTp lttSp">
+                Action
+            </h2>
+
+            <div class="child-element">
+                <p>url</p>
+            </div>
+            <div class="child-element">
+                <p>onde os dados serão enviados, processados, etc</p>
+            </div>
+        </div>
+
+        <div class="parent-element">
+            <h2 class="main-subtitle sbPdBt sbPdTp lttSp">
+                Method
+            </h2>
+
+            <div class="child-element">
+                <p>get: retorna algo do server (mecanismo de pesquisa)</p>
+            </div>
+            <div class="child-element">
+                <p>post: altera / armazena algo no server (contas, pagamentos)</p>
+            </div>
+        </div>
+
+        <div class="parent-element">
+            <h2 class="main-subtitle sbPdBt sbPdTp lttSp">
+                Form Controls
+            </h2>
+
+            <div class="child-element">
+                <p>widgets</p>
+            </div>
+            <div class="child-element">
+                <p>input, labels...</p>
+            </div>
+        </div>
+
+        <div class="parent-element">
+            <h2 class="main-subtitle sbPdBt sbPdTp lttSp">
+                Name Attribute
+            </h2>
+
+            <div class="child-element">
+                <p>"legenda" para o backend</p>
+            </div>
+            <div class="child-element">
+                <a class="main-link scLink" href="https://codepen.io/TheOdinProjectExamples/pen/dyVRMbq" target="_blank" rel="noopener noreferrer">
+                    Exemplo no codepen
+                </a>
+            </div>
+        </div>
+
+        <div class="parent-element">
+            <h2 class="main-subtitle sbPdBt sbPdTp lttSp">
+                Type Attribute
+            </h2>
+
+            <div class="child-element">
+                <p>Define que tipo de dado será processado</p>
+            </div>
+            <div class="child-element">
+                <p>input type</p>
+            </div>
+        </div>
+
+        <form class="parent-element" action="">
+            <h2 class="main-subtitle sbPdBt sbPdTp lttSp">
+                Form Controls
+            </h2>
+
+            <fieldset class="child-element fieldChild">
+                <legend class="formLeg">Text</legend>
+
+                <div class="form-control">
+                    <label for="text">Text</label>
+                    <input
+                        type="text"
+                        id="text"
+                        placeholder="Type text"
+                    >
+                </div>
+                <div class="form-control">
+                    <label for="number">Number</label>
+                    <input
+                        type="number"
+                        id="number"
+                        placeholder="Type number"
+                    >
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Type email"
+                    >
+                </div>
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Type password"
+                    >
+                </div>
+                <div class="form-control">
+                    <label for="textarea">Text Area</label>
+                    <textarea
+                        id="textarea"
+                        placeholder="Text Area"
+                    ></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset class="child-element fieldChild">
+                <legend class="formLeg">Checkbox</legend>
+
+                <div>
+                    <input
+                        type="checkbox"
+                        name="checkbox"
+                        id="op-1"
+                        value="op-1"
+                    >
+                    <label for="text">Option 1</label>
+                </div>
+                <div>
+                    <input
+                        type="checkbox"
+                        name="checkbox"
+                        id="op-1"
+                        value="op-1"
+                    >
+                    <label for="text">Option 2</label>
+                </div>
+                <div>
+                    <input
+                        type="checkbox"
+                        name="checkbox"
+                        id="op-1"
+                        value="op-1"
+                    >
+                    <label for="text">Option 3</label>
+                </div>
+            </fieldset>
+        </form>
 
     </section>
 
