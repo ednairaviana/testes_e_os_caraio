@@ -76,6 +76,6 @@ em::selection {
 	background-color: rgba(0,0,0,0.5);
 }
 
-label::selection, input::selection, legend::selection {
+label::selection, input::selection, legend::selection, textarea::selection, select::selection, button::selection {
 	background-color: rgba(0,0,0,0.5);
 }
